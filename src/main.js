@@ -1,29 +1,24 @@
 /*
  * @Author       : Jason <2087108700@qq.com>
  * @Date         : 2021-07-09 23:49:57
- * @LastEditTime : 2021-07-11 03:31:44
+ * @LastEditTime : 2021-07-11 05:53:42
  * @LastEditors  : Jason
  * @Description  :
  * @FilePath     : \vue-admin-template-plus\src\main.js
  */
-import Vue from 'vue'
-
 import 'normalize.css/normalize.css' // A modern alternative to CSS resets
-
-import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import locale from 'element-ui/lib/locale/lang/en' // lang i18n
-
 import '@/styles/index.scss' // global css
-
-import App from './App'
-import store from './store'
-import router from './router'
-
 import '@/icons' // icon
 import '@/utils/permission' // permission control
 
-import plugins from './plugins'
+import App from './App'
+import ElementUI from 'element-ui'
+import Vue from 'vue'
+import locale from 'element-ui/lib/locale/lang/en' // lang i18n
+import plugins from './plugins' // plugins loader
+import router from './router'
+import store from './store'
 
 /**
  * If you don't want to use mock-server
