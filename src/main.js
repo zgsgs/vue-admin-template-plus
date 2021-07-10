@@ -1,7 +1,7 @@
 /*
  * @Author       : Jason <2087108700@qq.com>
  * @Date         : 2021-07-09 23:49:57
- * @LastEditTime : 2021-07-10 22:35:40
+ * @LastEditTime : 2021-07-11 03:31:44
  * @LastEditors  : Jason
  * @Description  :
  * @FilePath     : \vue-admin-template-plus\src\main.js
@@ -23,6 +23,8 @@ import router from './router'
 import '@/icons' // icon
 import '@/utils/permission' // permission control
 
+import plugins from './plugins'
+
 /**
  * If you don't want to use mock-server
  * you want to use MockJs for mock api
@@ -41,6 +43,8 @@ Vue.use(ElementUI, { locale })
 // 如果想要中文版 element-ui，按如下方式声明
 // Vue.use(ElementUI)
 
+// 挂载全部自定义插件
+Vue.use(plugins)
 Vue.config.productionTip = false
 
 new Vue({
