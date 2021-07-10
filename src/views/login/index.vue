@@ -53,7 +53,7 @@
 </template>
 
 <script>
-import { validUsername } from '@/utils/validate'
+import { validUsername } from '@/validates/common'
 
 export default {
   name: 'Login',

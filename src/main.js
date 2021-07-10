@@ -1,3 +1,11 @@
+/*
+ * @Author       : Jason <2087108700@qq.com>
+ * @Date         : 2021-07-09 23:49:57
+ * @LastEditTime : 2021-07-10 22:35:40
+ * @LastEditors  : Jason
+ * @Description  :
+ * @FilePath     : \vue-admin-template-plus\src\main.js
+ */
 import Vue from 'vue'
 
 import 'normalize.css/normalize.css' // A modern alternative to CSS resets
@@ -13,7 +21,7 @@ import store from './store'
 import router from './router'
 
 import '@/icons' // icon
-import '@/permission' // permission control
+import '@/utils/permission' // permission control
 
 /**
  * If you don't want to use mock-server

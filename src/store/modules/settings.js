@@ -1,4 +1,4 @@
-import defaultSettings from '@/settings'
+import defaultSettings from '@/config/settings'
 
 const { showSettings, fixedHeader, sidebarLogo } = defaultSettings
 
@@ -29,4 +29,3 @@ export default {
   mutations,
   actions
 }
-
