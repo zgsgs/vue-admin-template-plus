@@ -1,3 +1,11 @@
+/*
+ * @Author       : Jason <2087108700@qq.com>
+ * @Date         : 2021-07-09 23:49:57
+ * @LastEditTime : 2021-07-11 01:04:40
+ * @LastEditors  : Jason
+ * @Description  : user模块API
+ * @FilePath     : \vue-admin-template-plus\src\api\user.js
+ */
 import request from '@/utils/request'
 
 export function login(data) {

@@ -1,7 +1,7 @@
 /*
  * @Author       : Jason <2087108700@qq.com>
  * @Date         : 2021-07-10 00:19:35
- * @LastEditTime : 2021-07-10 23:36:26
+ * @LastEditTime : 2021-07-11 01:03:08
  * @LastEditors  : Jason
  * @Description  : 总路由
  * @FilePath     : \vue-admin-template-plus\src\router\index.js
@@ -58,7 +58,6 @@ const createRouter = () => new Router({
 
 const router = createRouter()
 
-// Detail see: https://github.com/vuejs/vue-router/issues/1234#issuecomment-357941465
 export function resetRouter() {
   const newRouter = createRouter()
   router.matcher = newRouter.matcher // reset router
