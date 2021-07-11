@@ -6,6 +6,12 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  mounted() {
+    window.document.documentElement.setAttribute(
+      'data-theme',
+      'default'
+    )
+  }
 }
 </script>

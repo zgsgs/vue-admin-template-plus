@@ -1,7 +1,7 @@
 <template>
   <div class="dashboard-container">
     <div class="dashboard-text">name: {{ name }}</div>
-    <div class="header">sassMagic全局导入啦</div>
+    <div class="header t-border">sassMagic全局导入啦</div>
   </div>
 </template>
 
