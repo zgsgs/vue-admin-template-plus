@@ -32,6 +32,7 @@ module.exports = {
   devServer: {
     port: port,
     open: true,
+    // https: true,
     overlay: {
       warnings: false,
       errors: true
@@ -42,6 +43,7 @@ module.exports = {
     // provide the app's title in webpack's name field, so that
     // it can be accessed in index.html to inject the correct title.
     name: name,
+    // devtool: 'source-map', // 源码映射 调试时开启 生产环境关闭
     resolve: {
       alias: {
         '@': resolve('src')
@@ -119,5 +121,17 @@ module.exports = {
           config.optimization.runtimeChunk('single')
         }
       )
+  },
+  // 引入sassMagic配置
+  css: {
+    sourceMap: true,
+    loaderOptions: {
+      scss: {
+        prependData: `
+        @import "@/styles/settings/var.scss";
+        @import "@/styles/tools/_sassMagic.scss";
+        `
+      }
+    }
   }
 }
