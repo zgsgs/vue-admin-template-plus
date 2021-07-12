@@ -8,12 +8,12 @@
 @import './acss/font-size.scss';
 @import './acss/white-space.scss';
 @import './base/article.scss';
-@import './base/element-ui.scss';
 @import './base/form.scss';
 @import './base/images.scss';
 @import './base/link.scss';
-@import './base/mixin.scss';
 @import './base/page.scss';
 @import './base/sidebar.scss';
-@import './base/transition.scss';
+@import './generic/element-ui.scss';
 @import './theme/index.scss';
+@import './tools/mixin.scss';
+@import './tools/transition.scss';

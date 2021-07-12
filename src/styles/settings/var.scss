@@ -1,22 +1,46 @@
 /* Color
 ----------------------- */
-$color-primary: #ff5777;
+$color-primary: #545cd8;
+$color-secondary: #30b1ff;
+$color-success: #3ac47d;
+$color-warning: #f7b924;
+$color-danger: #d92550;
+$color-info: #6c757d;
+$color-focus: #383545;
+$color-alt: #83588a;
+$color-light: #eee;
+$color-dark: #343a40;
 $color-white: #fff;
 $color-black: #000;
-$color-text-primary: #333;
-$color-text-secondary: #666;
+$color-text-primary: #303133;
+$color-text-regular: #606266;
+$color-text-secondary: #909399;
+$color-text-placeholder: #c0c4cc;
 $color-text-tertiary: $color-white;
 $color-text-quaternary: $color-primary;
-$border-color-base: #e5e5e5;
-$background-color-primary: #f1f1f1;
+$border-color-base: #dcdfe6; // #e5e5e5;
+$border-color-light: #e4e7ed;
+$border-color-lighter: #e4e7ed;
+$border-color-extra-light: #e4e7ed;
+$background-color-base: #f5f7fa;
+$background-color-primary: #ecf0f5; // #f1f1f1;
 $background-color-secondary: $color-white;
 $background-color-tertiary: $color-primary;
 
 /* Border
 ----------------------- */
 $border-width-base: 1px !default;
+$border-radius-base: 4px !default;
+$border-radius-small: 2px !default;
+$border-radius-circle: 100% !default;
+$border-radius-zero: 0 !default;
 $border-style-base: solid !default;
 $border-base: $border-width-base $border-style-base $border-color-base !default;
+
+/* box-shadow
+----------------------- */
+$box-shadow-base: 0 2px 4px 0 rgba(0, 0, 0, .12),0 0 6px 0 rgba(0, 0, 0, .04);
+$box-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, .1);
 
 /* z-index
 ----------------------- */

@@ -51,7 +51,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '~@/styles/base/mixin.scss';
+  @import '~@/styles/tools/mixin.scss';
   @import '~@/styles/settings/variables.scss';
 
   .app-wrapper {

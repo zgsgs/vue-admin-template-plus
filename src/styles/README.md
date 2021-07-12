@@ -16,11 +16,16 @@ ITCSS确定代码层级 | BEM确定命名 | ACSS确定原子样式
 
 ### Generic层
 
-利用normalize.css重置浏览器默认样式（直接npm安装）
+最基本的设定 normalize.css，reset
+
+> 这里我分为两部分：
+>
+> - 利用normalize.css重置浏览器默认样式（直接npm安装）
+> - 重置三方组件库通用样式 如element ui（建目录管理）
 
 ### Base层
 
-对各类元素基础样式进行补充（建目录管理）
+对各类元素选择器基础样式进行补充（建目录管理）
 
 ### Object层
 
@@ -55,5 +60,7 @@ ITCSS确定代码层级 | BEM确定命名 | ACSS确定原子样式
 
 主题样式层（建目录管理）
 
+### Trumps层
 
+helper 唯一可以使用 important! 的地方 （不建目录，不使用）
 
