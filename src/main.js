@@ -1,9 +1,9 @@
 /*
  * @Author       : Jason <2087108700@qq.com>
  * @Date         : 2021-07-09 23:49:57
- * @LastEditTime : 2021-07-11 05:53:42
+ * @LastEditTime : 2021-07-13 13:34:26
  * @LastEditors  : Jason
- * @Description  :
+ * @Description  : 全局入口文件
  * @FilePath     : \vue-admin-template-plus\src\main.js
  */
 import 'normalize.css/normalize.css' // A modern alternative to CSS resets

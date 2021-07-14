@@ -1,8 +1,17 @@
+/*
+ * @Author       : Jason <2087108700@qq.com>
+ * @Date         : 2021-07-12 10:16:22
+ * @Description  : 利用router的钩子函数 实现基础的权限控制
+ * @FilePath     : \vue-admin-template-plus\src\utils\permission.js
+ * @LastEditTime : 2021-07-14 10:27:13
+ * @LastEditors  : Jason
+ */
 import router from '../router'
 import store from '../store'
 import { Message } from 'element-ui'
 import NProgress from 'nprogress' // progress bar
 import 'nprogress/nprogress.css' // progress bar style
+import { clearPending } from './pending'
 import { getToken } from '@/utils/auth' // get token from cookie
 import getPageTitle from '@/utils/get-page-title'
 
@@ -13,7 +22,8 @@ const whiteList = ['/login'] // no redirect whitelist
 router.beforeEach(async(to, from, next) => {
   // start progress bar
   NProgress.start()
-
+  // 取消所有from页面的请求
+  clearPending()
   // set page title
   document.title = getPageTitle(to.meta.title)
 

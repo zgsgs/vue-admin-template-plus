@@ -1,6 +1,15 @@
+/*
+ * @Author       : Jason <2087108700@qq.com>
+ * @Date         : 2021-07-12 10:16:22
+ * @Description  : 请求封装
+ * @FilePath     : \vue-admin-template-plus\src\utils\request.js
+ * @LastEditTime : 2021-07-14 10:26:33
+ * @LastEditors  : Jason
+ */
 import axios from 'axios'
 import { MessageBox, Message } from 'element-ui'
 import store from '@/store'
+import { addPending, removePending } from './pending'
 import { getToken } from '@/utils/auth'
 
 // create an axios instance
@@ -15,6 +24,10 @@ service.interceptors.request.use(
   config => {
     // do something before request is sent
 
+    // 在请求开始前，对之前的请求做检查取消操作
+    // 将当前请求添加到 pending 中
+    removePending(config)
+    addPending(config)
     if (store.getters.token) {
       // let each request carry token
       // ['X-Token'] is a custom headers key
@@ -44,7 +57,8 @@ service.interceptors.response.use(
    */
   response => {
     const res = response.data
-
+    // 在请求结束后，移除本次请求
+    removePending(response)
     // if the custom code is not 20000, it is judged as an error.
     if (res.code !== 20000) {
       Message({
