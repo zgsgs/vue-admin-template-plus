@@ -1,16 +1,18 @@
 /*
  * @Author       : Jason <2087108700@qq.com>
  * @Date         : 2021-07-09 23:49:57
- * @LastEditTime : 2021-07-13 13:34:26
+ * @LastEditTime : 2021-07-15 00:27:14
  * @LastEditors  : Jason
  * @Description  : 全局入口文件
  * @FilePath     : \vue-admin-template-plus\src\main.js
  */
+
 import 'normalize.css/normalize.css' // A modern alternative to CSS resets
 import 'element-ui/lib/theme-chalk/index.css'
 import '@/styles/index.scss' // global css
 import '@/icons' // icon
 import '@/utils/permission' // permission control
+// import 'lib-flexible/flexible'
 
 import App from './App'
 import ElementUI from 'element-ui'
