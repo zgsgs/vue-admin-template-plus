@@ -1,7 +1,7 @@
 /*
  * @Author       : Jason <2087108700@qq.com>
  * @Date         : 2021-07-11 01:11:10
- * @LastEditTime : 2021-07-11 03:29:04
+ * @LastEditTime : 2021-07-13 16:00:07
  * @LastEditors  : Jason
  * @Description  : 自动载入全局公共组件
  * @FilePath     : \vue-admin-template-plus\src\plugins\loadComponents.js
@@ -15,7 +15,7 @@ const plugins = {
       // 获取组件配置
       const componentConfig = requireComponents(filePath)
       // 获取挂载名称 组件名约定为:大驼峰命名文件夹/index.vue
-      const componentName = filePath.match(/([a-zA-Z]+)\/index.vue/)[0].replace('/index.vue', '')
+      const componentName = filePath.match(/([_a-zA-Z0-9]+)\/index.vue/)[0].replace('/index.vue', '')
       // 全局注册组件
       Vue.component(
         componentName,
