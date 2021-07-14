@@ -8,24 +8,29 @@ ITCSS确定代码层级 | BEM确定命名 | ACSS确定原子样式
 
 ### Settings层
 
-预处理程序变量和方法（并没有真正的CSS output）（建目录管理）
+预处理程序变量和方法，比如颜色（并没有真正的CSS output）（建目录管理）
+
+> 此处分两部分：
+>
+> - var.scss是单纯的变量
+> - variables.scss是可以导出给JS使用的变量
 
 ### Tools层
 
-管理Mixin和函数（并没有真正的CSS output）利用SassMagic框架进行改造（建目录管理）
+管理Mixin和Function（并没有真正的CSS output）利用SassMagic框架进行改造（建目录管理）
 
 ### Generic层
 
 最基本的设定 normalize.css，reset
 
-> 这里我分为两部分：
+> 这里分为两部分：
 >
 > - 利用normalize.css重置浏览器默认样式（直接npm安装）
 > - 重置三方组件库通用样式 如element ui（建目录管理）
 
 ### Base层
 
-对各类元素选择器基础样式进行补充（建目录管理）
+对各类元素选择器基础样式进行补充，只有这一层才使用 type selector（建目录管理）
 
 ### Object层
 
@@ -43,7 +48,7 @@ ITCSS确定代码层级 | BEM确定命名 | ACSS确定原子样式
 
 ### ACSS层
 
-管理原子类CSS（建目录管理）
+管理原子类CSS。比如字体大小颜色，边框，圆角，省略号，间距等（建目录管理）
 
 > 原则
 >
