@@ -1,6 +1,8 @@
 'use strict'
 const path = require('path')
 const defaultSettings = require('./src/config/settings.js')
+const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin')
+const MonacoEditorLocalesPlugin = require('monaco-editor-locales-plugin')
 
 function resolve(dir) {
   return path.join(__dirname, dir)
@@ -43,12 +45,24 @@ module.exports = {
     // provide the app's title in webpack's name field, so that
     // it can be accessed in index.html to inject the correct title.
     name: name,
-    // devtool: 'source-map', // 源码映射 调试时开启 生产环境关闭
+    devtool: 'source-map', // 源码映射 调试时开启 生产环境关闭
     resolve: {
       alias: {
         '@': resolve('src')
       }
-    }
+    },
+    plugins: [
+      new MonacoWebpackPlugin({
+        languages: ['json'], // 配置需要的languages，减少打包后的体积
+        output: './static/js/monaco-editor'
+      }),
+      new MonacoEditorLocalesPlugin({
+        languages: ['es', 'zh-cn'],
+        defaultLanguages: 'zh-cn',
+        logUnmatched: false,
+        mapLanguages: {}
+      })
+    ]
   },
   chainWebpack(config) {
     // it can improve the speed of the first screen, it is recommended to turn on preload
