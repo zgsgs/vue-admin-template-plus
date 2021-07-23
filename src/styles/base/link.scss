@@ -1,3 +1,17 @@
+/*
+ * @Author       : Jason <2087108700@qq.com>
+ * @Date         : 2021-07-11 22:10:18
+ * @Description  : 链接标签元素
+ * @FilePath     : \vue-admin-template-plus\src\styles\base\link.scss
+ * @LastEditTime : 2021-07-17 14:44:59
+ * @LastEditors  : Jason
+ */
+/*
+  <a>	定义一个链接
+  <base>	定义页面中所有链接的默认地址或默认目标
+  <link>	定义文档与外部资源的关系
+*/
+
 a {
   color: $color-text-primary;
   text-decoration: none;

@@ -1,3 +1,24 @@
+/*
+ * @Author       : Jason <2087108700@qq.com>
+ * @Date         : 2021-07-11 22:08:50
+ * @Description  : 表单标签元素
+ * @FilePath     : \vue-admin-template-plus\src\styles\base\form.scss
+ * @LastEditTime : 2021-07-17 18:28:38
+ * @LastEditors  : Jason
+ */
+
+/*
+<form>	定义一个 HTML 表单，用于用户输入
+<input>	定义一个输入控件
+<textarea>	定义多行的文本输入控件
+<button>	定义按钮
+<select>	定义选择列表（下拉列表）
+<option>	定义选择列表中的选项
+<label>	定义 input 元素的标注
+<fieldset>	定义围绕表单中元素的边框
+<datalist>	规定了 input 元素可能的选项列表
+*/
+
 input {
   padding: 0;
   outline: none;

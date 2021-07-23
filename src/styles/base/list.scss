@@ -1,0 +1,24 @@
+/*
+ * @Author       : Jason <2087108700@qq.com>
+ * @Date         : 2021-07-17 14:45:24
+ * @Description  : 列表标签元素
+ * @FilePath     : \vue-admin-template-plus\src\styles\base\list.scss
+ * @LastEditTime : 2021-07-23 16:35:59
+ * @LastEditors  : Jason
+ */
+
+/*
+  <ul>	定义一个无序列表
+  <ol>	定义一个有序列表
+  <li>	定义一个列表项
+  <dl>	定义一个定义列表
+  <dt>	定义一个定义定义列表中的项目
+  <dd>	定义定义列表中项目的描述
+  <menu>	定义菜单列表
+ */
+
+ ol,
+ ul,
+ li {
+   list-style: none;
+ }

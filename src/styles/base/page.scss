@@ -1,5 +1,46 @@
-*, *:before, *:after {
+/*
+ * @Author       : Jason <2087108700@qq.com>
+ * @Date         : 2021-07-11 22:08:41
+ * @Description  : 文档标签元素
+ * @FilePath     : \vue-admin-template-plus\src\styles\base\page.scss
+ * @LastEditTime : 2021-07-23 16:36:25
+ * @LastEditors  : Jason
+ */
+
+/*
+  <!DOCTYPE>	定义文档类型
+  <html>	定义HTML文档
+  <head>	定义文档的头部
+  <meta>	定义元素可提供的有关页面的元信息，比如针对搜索引擎和更新频度的描述和关键字
+  <base>	定义页面上的所有链接规定默认地址或默认目标
+  <title>	定义文档标题
+  <link>	定义文档与外部资源的关系
+  <style>	定义HTML文档样式信息
+  <body>	定义文档的主体
+  <script>	定义客户端脚本，比如javascript
+*/
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+vertical-align: baseline;
+background: transparent;
 }
 html {
   box-sizing: border-box;
@@ -12,15 +53,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
-}
-div:focus {
-  outline: none;
-}
-#app {
-  height: 100%;
-}
-// main-container global css
-.app-container {
-  padding: 20px;
+  font-family: NotoSansCJK-Regular, NotoSansCJK,Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB,
+    Microsoft YaHei, Arial, sans-serif;
 }

@@ -1,0 +1,25 @@
+/*
+ * @Author       : Jason <2087108700@qq.com>
+ * @Date         : 2021-07-17 14:40:51
+ * @Description  : 排版标签元素
+ * @FilePath     : \vue-admin-template-plus\src\styles\base\layout.scss
+ * @LastEditTime : 2021-07-18 16:10:44
+ * @LastEditors  : Jason
+ */
+
+/*
+  <h1> to <h6>	定义 HTML 标题
+  <p>	定义一个段落
+  <br>	定义简单的折行
+  <hr>	定义水平线
+  <div>	定义文档中的节
+  <span>	定义文档中的节
+*/
+p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+div:focus {
+  outline: none;
+}

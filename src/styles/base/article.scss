@@ -1,4 +1,22 @@
-p {
-  margin: 0;
-  line-height: 1.5;
-}
+/*
+ * @Author       : Jason <2087108700@qq.com>
+ * @Date         : 2021-07-11 22:08:41
+ * @Description  : 文本格式化标签元素
+ * @FilePath     : \vue-admin-template-plus\src\styles\base\article.scss
+ * @LastEditTime : 2021-07-17 14:43:34
+ * @LastEditors  : Jason
+ */
+
+/*
+  <b>	定义粗体文本（无语义）
+  <i>	定义斜体文本（无语义）
+  <s>	定义加删除线的文本（无语义）
+  <u>	定义下划线文本（无语义）
+  <strong>	定义语气更为强烈的强调文本（有语义）
+  <em>	定义强调文本（有语义）
+  <del>	定义被删除文本（有语义）
+  <ins>	定义被插入文本（有语义）
+  <blockquote>	定义块引用
+  <sub>	定义下标文本
+  <sup>	定义上标文本
+ */
