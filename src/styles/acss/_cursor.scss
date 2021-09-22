@@ -1,0 +1,17 @@
+/* 省略号
+[cursor]{
+  ...一行省略
+}
+...
+[cursor]{
+  ...三行省略
+}
+-------------------------
+*/
+@each $style
+  in (pointer pointer, secondary $background-color-secondary, tertiary $background-color-tertiary)
+{
+  [cursor-#{nth($style, 1)}] {
+    background-color: #{nth($style, 2)};
+  }
+}

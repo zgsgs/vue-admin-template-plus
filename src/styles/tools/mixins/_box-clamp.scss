@@ -41,8 +41,8 @@
     overflow: hidden;
   } @else {
     overflow: hidden;
-    display: -webkit-box;
     display: flex;
+    display: -webkit-box;
     -webkit-line-clamp: $lines;
             line-clamp: $lines;
     -webkit-box-orient: vertical;

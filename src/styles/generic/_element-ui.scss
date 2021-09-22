@@ -2,8 +2,8 @@
  * @Author       : Jason <2087108700@qq.com>
  * @Date         : 2021-07-15 00:01:31
  * @Description  : 重置element-ui样式
- * @FilePath     : \vue-admin-template-plus\src\styles\generic\element-ui.scss
- * @LastEditTime : 2021-07-23 16:50:13
+ * @FilePath     : \yolo_nft_fontend\src\styles\generic\element-ui.scss
+ * @LastEditTime : 2021-09-20 14:55:17
  * @LastEditors  : Jason
  */
 // cover some element-ui styles
@@ -22,7 +22,6 @@
 .el-upload__input {
   display: none;
 }
-
 
 // to fixed https://github.com/ElemeFE/element/issues/2461
 .el-dialog {
@@ -47,7 +46,7 @@
 // dropdown
 .el-dropdown-menu {
   a {
-    display: block
+    display: block;
   }
 }
 
@@ -57,12 +56,12 @@
 }
 
 // button
-.el-button[sm]{
+.el-button[mini] {
   outline: none;
   padding: 6px 12px;
 }
 
-.el-button[line]{
-  color:#fff;
-  background-color: transparent;
-}
+// .el-button[line] {
+//   color: #fff;
+//   background-color: transparent;
+// }

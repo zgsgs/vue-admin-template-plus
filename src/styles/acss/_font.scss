@@ -1,0 +1,46 @@
+/* 字体大小
+[fz12]{
+  font-size: 12px;
+}
+...
+[fz60]{
+  font-size: 60px;
+}
+----------------------
+*/
+@for $i from 6 through 30 {
+  [fz#{$i * 2}] {
+    font-size: #{$i * 2}px;
+  }
+}
+
+/* 字体大小
+[fw1]{
+  font-weight: 100;
+}
+...
+[fw9]{
+  font-weight: 900;
+}
+[fw-bold]{
+  font-weight: bold;
+}
+----------------------
+*/
+@for $i from 1 through 9 {
+  [fw#{$i}] {
+    font-weight: #{$i * 100};
+  }
+}
+@each $d in (b bold, n normal) {
+  [fw-#{nth($d, 1)}] {
+    font-weight: #{nth($d, 2)};
+  }
+}
+
+/*
+  文本的修饰线外观的（下划线、上划线、贯穿线/删除线  或 闪烁
+*/
+[decoration] {
+  text-decoration: line-through;
+}

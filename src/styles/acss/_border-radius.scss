@@ -1,0 +1,32 @@
+/* 圆角
+[radius1]{
+  border-radius: 1px;
+  overflow:hidden;
+}
+...
+[radius10]{
+  border-radius: 10px;
+  overflow:hidden;
+}
+...
+[circle] {
+  border-radius: 100rem;
+}
+[semicircle] {
+  border-radius: 100rem;
+}
+----------------------------
+*/
+@for $i from 0 through 12 {
+  [radius#{$i}] {
+    border-radius: #{$i}px;
+    overflow: hidden;
+  }
+}
+
+[circle] {
+  border-radius: 50%;
+}
+[semicircle] {
+  border-radius: 100rem;
+}
