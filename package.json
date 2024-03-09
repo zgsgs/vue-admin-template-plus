@@ -18,7 +18,7 @@
     "core-js": "^3.6.5",
     "element-ui": "2.13.2",
     "js-cookie": "2.2.0",
-    "monaco-editor": "^0.26.1",
+    "monaco-editor": "^0.47.0",
     "monaco-editor-locales-plugin": "0.0.3",
     "normalize.css": "^8.0.1",
     "nprogress": "0.2.0",
